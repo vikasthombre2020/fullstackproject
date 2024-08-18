@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Page</title>
+    
+    <link rel="stylesheet" href="styes.css">
+    <style>
+      h1,h2,p{
+        background-color: burlywood;
+        color:color(from color srgb r g b);
+        text-align: center;
+        padding: auto;
+        border: 3px rgb(147, 63, 4);
+      }
+      .center{
+        display: block;
+        margin: auto;
+        width: 50%;
+      }
+      form{
+        margin: auto;
+        width: min(600px, 80%);
+        padding: auto;
+        border: 3px saddlebrown;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+			  background-color: Gainsboro;
+
+      }
+    </style>
+</head>
+<body onload="alert('hello')">
+    <h2 style="color: rgb(186, 18, 18)">Hello From Achievers Career Academy Lonavala</h2>
+    <img src="Full-Stack-Developer.jpg"  width="600" height="400" class="center">
+    <p> Tell us aout your course</p>
+    <form>
+        <div>
+            <label>Choose a course</label>
+        </div>
+        <div>
+            <select id="courses" multiple size="3">
+                <option value="" selected>--Choose--</option>
+                <option value="angular" >Angular</option>
+                <option value="react" >React</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+		<div id="favorites">
+			<div >
+				<label class="standoutLabel"> Favorite Instructor:</label>
+				<input type="text" id="instructorName">
+			</div>
+			<div>
+				<label class="standoutLabel"> Favorite course:</label>
+				<input type="text" id="courseName">
+			</div>
+			<div>
+				<p> Did you like the course?</p>
+			</div>
+			<div id="likes">
+				<input type="radio" name="like">Yes
+				<input type="radio" name="like">NO
+			</div>
+			</div>
+        <div>
+            <button class="green_btn">Send</button>
+        </div>
+    </form>
+
+
+</body>
+</html>
